@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Complete",
+    "description": "Complete tasks",
+    "checked": false
+  },
+  {
+    "id": 2,
+    "name": "Project",
+    "description": "Review project proposal",
+    "checked": true
+  },
+  {
+    "id": 3,
+    "name": "Grocery",
+    "description": "Buy groceries",
+    "checked": false
+  },
+  {
+    "id": 4,
+    "name": "Mom",
+    "description": "Call mom",
+    "checked": true
+  },
+  {
+    "id": 5,
+    "name": "Report",
+    "description": "Write report",
+    "checked": false
+  },
+  {
+    "id": 6,
+    "name": "Workout",
+    "description": "Exercise for 30 minutes",
+    "checked": true
+  },
+  {
+    "id": 7,
+    "name": "Read",
+    "description": "Read a book",
+    "checked": false
+  },
+  {
+    "id": 8,
+    "name": "Meet",
+    "description": "Attend meeting at 2 PM",
+    "checked": false
+  },
+  {
+    "id": 9,
+    "name": "Water",
+    "description": "Water the plants",
+    "checked": true
+  },
+  {
+    "id": 10,
+    "name": "Vacay",
+    "description": "Plan vacation",
+    "checked": false
+  }
+]
