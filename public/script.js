@@ -12,7 +12,7 @@ const fetchPeople = async () => {
     const { data } = await axios.get('/api/people');
     console.log(data);
     const people = data.data.map((person) => {
-      return `<div class="divy"><h5 class = "names"> ${person.name} </h5><h3>${person.description}</h3><button class="edit" data-id="${person.id}">Edit</button><button class="delete1" data-id="${person.id}">Delete</button></div>`;
+      return `<div class="divy"><h5 class = "names"> ${person.name} </h5><h3>${person.description}</h3><button class="edit" data-id="${person.id}">Edit</button><button class="delete1" data-id="${person.id}">Delete</button><p style="display:flex; text-align:center">Check:<input type="checkbox" class="check" id="${person.id}" name="${person.id}" ></p></div>`;
     });
     result.innerHTML = people.join('');
     const edit = document.querySelectorAll('.edit');
@@ -31,6 +31,15 @@ const fetchPeople = async () => {
           editId = element.getAttribute('data-id');
           x = true;
           fetchPeople();
+        } catch (error) {}
+      });
+    });
+    const done = document.querySelectorAll('.check');
+    done.forEach((element) => {
+      element.addEventListener('click', async (e) => {
+        e.preventDefault();
+        try {
+          console.log(element);
         } catch (error) {}
       });
     });
