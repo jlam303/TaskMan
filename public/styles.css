@@ -4,6 +4,10 @@
 ::before {
   box-sizing: border-box;
 }
+.crossed{
+  text-decoration:line-through ;
+  opacity: .5;
+}
 .divy{
   margin-left:2.5rem;
   margin-right: 2.5rem;
